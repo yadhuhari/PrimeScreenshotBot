@@ -8,8 +8,8 @@ from ..screenshotbot import ScreenShotBot
 @ScreenShotBot.on_message(filters.private & filters.command("start"))
 async def start(c, m, cb=False):
     owner_id = Config.AUTH_USERS[0]
-    username = 'Ns_AnoNymous'
-    mention = '[Anonymous](https://t.me/Ns_AnoNymous)'
+    username = 'Mrk_YT'
+    mention = '[Mo Tech YT](https://t.me/Mo_Tech_YT)'
     try:
         owner = await c.get_users(owner_id)
         username = owner.username if owner.username else 'Ns_AnoNymous'
@@ -19,9 +19,9 @@ async def start(c, m, cb=False):
 
     BUTTONS = [[
         InlineKeyboardButton("My Father 🧔", url=f"https://t.me/{username}"),
-        InlineKeyboardButton("Updates Channel 🔰", url="https://t.me/Ns_bot_updates")
+        InlineKeyboardButton("Updates Channel 🔰", url="https://t.me/Mo_Tech_YT")
         ],[
-        InlineKeyboardButton("Source code 😎", url="https://github.com/Ns-AnoNymouS/animated-lamp")
+        InlineKeyboardButton("🖥️ How To Own 🖥️", url="https://github.com/Ns-AnoNymouS/animated-lamp")
         ],[
         InlineKeyboardButton("Help ⁉️", callback_data="help"),
         InlineKeyboardButton("Settings ⚙", callback_data="set+settings")
