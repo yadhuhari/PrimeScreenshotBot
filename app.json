@@ -9,18 +9,18 @@
    "Sample video",
    "Trim Video"
   ],
-  "repository": "https://github.com/Ns-AnoNymouS/screenshot-bot",
+  "repository": "https://github.com/MRK-YT/MT-screenshot-bot",
   "env": {
     "API_ID": {
-      "description": "Your Telegram API ID. Get this value from my.telegram.org!",
+      "description": "Your Telegram API ID. Get this value from https://youtu.be/5eEsvLAKVc0! ",
       "value": ""
     },
     "API_HASH": {
-      "description": " Your Telegram API HASH. Get this value from my.telegram.org!",
+      "description": " Your Telegram API HASH. Get this value from https://youtu.be/5eEsvLAKVc0!",
       "value": ""
     },
     "BOT_TOKEN": {
-      "description": "Your Bot token, as a string.",
+      "description": "Your Bot token, as a string. https://youtu.be/cB4UduCcNWs",
       "value": ""
     },
     "SESSION_NAME": {
@@ -32,7 +32,7 @@
       "value": ""
     },
     "DATABASE_URL": {
-      "description": "Mongodb database URI from https://cloud.mongodb.com/",
+      "description": "Mongodb database URI from https://youtu.be/gBLTsH-IXr0",
       "value": ""
     },
     "AUTH_USERS": {
