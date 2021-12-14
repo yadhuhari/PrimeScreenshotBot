@@ -297,7 +297,7 @@ class Utilities:
         screenshot_mode = await db.get_screenshot_mode(chat_id)
         font_size = await db.get_font_size(chat_id)
         mode_txt = "Document" if as_file else "Image"
-        wm_txt = watermark_text if watermark_text else "No watermark exists!"
+        wm_txt = watermark_text or "No watermark exists!"
         genmode = "Equally spaced" if screenshot_mode == 0 else "Random screenshots"
 
         sv_btn = [
@@ -309,9 +309,10 @@ class Utilities:
             InlineKeyboardButton(f"{Config.COLORS[watermark_color_code]}", "set+wc")
         ]
         fs_btn = [
-            InlineKeyboardButton(f"𝔸𝕒 Watermark Font Size", "rj"),
-            InlineKeyboardButton(f"{Config.FONT_SIZES_NAME[font_size]}", "set+fs")
+            InlineKeyboardButton('𝔸𝕒 Watermark Font Size', "rj"),
+            InlineKeyboardButton(f"{Config.FONT_SIZES_NAME[font_size]}", "set+fs"),
         ]
+
         wp_btn = [
             InlineKeyboardButton("🎭 Watermark Position", "rj"),
             InlineKeyboardButton(f"{Config.POSITIONS[watermark_position]}", "set+wp")
